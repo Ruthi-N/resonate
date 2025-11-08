@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resonate – Journal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body class="vibe-default">
+  <div class="backdrop" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">Resonate</span>
+      <span class="tag">a quiet space to tune your vibe</span>
+    </div>
+    <div class="actions">
+      <button id="skipButton" class="chip" title="Skip / Shuffle (same vibe)">🔀 Skip</button>
+      <button id="muteButton" class="chip" title="Mute / Unmute">🔇 Mute</button>
+    </div>
+  </header>
+
+  <main class="stage">
+    <section class="journal-card">
+      <h1 class="headline">When your mind feels noisy, write here.</h1>
+      <textarea id="journal" placeholder="Let your thoughts spill freely. No rules, no judgment."></textarea>
+      <p class="hint">Tip: end a sentence with <strong>.</strong>, <strong>?</strong> or <strong>!</strong> or pause for 2 seconds to let Resonate gently adjust the vibe.</p>
+    </section>
+  </main>
+
+  <div id="supportiveBubble" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
